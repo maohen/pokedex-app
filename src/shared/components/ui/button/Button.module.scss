@@ -1,0 +1,6 @@
+.button{
+    box-shadow: inset -8px 14px 20px -22px $medium;
+    &:hover{
+        cursor: pointer;
+    }
+}

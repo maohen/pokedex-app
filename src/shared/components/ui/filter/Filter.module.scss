@@ -1,0 +1,12 @@
+.buttonFilter{
+    border: none;
+    border-radius: 50%;
+    background-color: $white;
+
+    .iconFilter {
+        width: 2.2rem;
+        height: auto;
+        padding: .4rem;
+        filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(6730%) hue-rotate(342deg) brightness(84%) contrast(106%);;
+      }
+}

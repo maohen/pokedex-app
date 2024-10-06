@@ -1,0 +1,20 @@
+.containerInput{
+    background: $white;
+    border-radius: 1rem;
+    padding: .8rem;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    box-shadow: inset 0px 3px 8px -3px $medium;
+    width: -webkit-fill-available;
+
+    input{
+        width: -webkit-fill-available;
+    }
+
+    .iconSearch {
+        width: 1.3rem;
+        height: auto;
+        filter: brightness(0) saturate(100%) invert(22%) sepia(73%) saturate(6730%) hue-rotate(342deg) brightness(84%) contrast(106%);;
+      }
+}
