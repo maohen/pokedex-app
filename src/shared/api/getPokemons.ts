@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
 export const GET_DATA = gql`
-    query GetData($limit: Int) {
-        pokemon_v2_pokemon(order_by: {name: asc}, limit: $limit) {
+    query GetData($limit: Int, $where: pokemon_v2_pokemon_bool_exp) {
+        pokemon_v2_pokemon(order_by: {name: asc}, limit: $limit, where: $where) {
             id
             name
             height

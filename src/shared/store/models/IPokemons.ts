@@ -1,6 +1,9 @@
 export interface IPokemonState {
+    totalPokemons: IPokemon[]
     pokemons: IPokemon[];
     limit: number;
+    favorites: IPokemon[];
+    types: IType[]
   }
 
  export type IPokemon = {
@@ -11,4 +14,9 @@ export interface IPokemonState {
     weight: string;
     type: string[];
     color?: string;
+  }
+
+ export type IType = {
+    id: number;
+    name: string;
   }

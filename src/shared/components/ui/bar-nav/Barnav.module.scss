@@ -1,0 +1,32 @@
+.containerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: .5rem 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    .mainNav{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    .buttonNav{
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        img{
+            filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+        }
+    }
+
+    .infoNav{
+        color: $white;
+        font-size: $font4;
+    }
+
+}
