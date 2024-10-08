@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# Pokedex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React + TypeScript + Redux(rematch) + graphql + apollo/client + react-router-dom + sass + Vite
 
-Currently, two official plugins are available:
+- Aplicacion frontend desarrollada con React que consume la api de pokemon graphql, lista los pokemons en una vista principal implementando paginacion inicial y filtros por busqueda por nombre y por tipo de pokemon.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Tiene una vista de detalles del pokemon y ver mas informacion y agregarlo a favoritos.
 
-## Expanding the ESLint configuration
+- Tambien cuenta con una vista que muestra los pokemons que se han agregado a favoritos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requisitos Previos
 
-- Configure the top-level `parserOptions` property like this:
+### Lista de las dependencias o tecnologías que deben estar instaladas para correr el proyecto.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js >= 18
+- Yarn
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Instalación
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Pasos para clonar y configurar el proyecto:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+git clone https://github.com/maohen/pokedex-app.git
+cd proyecto
+npm install
+
+## Ejecución
+
+- yarn dev -> ejecuta el proyecto en local
+- yarn build -> compilar una version del proyecto
+
+## Estructura proyecto
+
+src/
+│
+├── pages/        # Vistas de la aplicacion
+├── shared/       # Recursos globales de la aplicacion -> Api, assets, components, helpers, router, store (estados de la aplicacion)
+├── styles/       # Estilos globales de la apliacion 
+├── tests/        # 
+└── App.js        # Componente principal

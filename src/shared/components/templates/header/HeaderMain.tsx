@@ -4,7 +4,7 @@ import styles from "./HeaderMain.module.scss";
 import { IHeaderMain } from "./IHeaderMain";
 import { Tooltip } from "react-tooltip";
 import { useLocation, useNavigate } from "react-router-dom";
-import { pathsRoutes } from "../../enums/pathsRoutes";
+import { pathsRoutes } from "../../../enums/pathsRoutes";
 
 export const HeaderMain = (props: IHeaderMain) => {
   const { handleSearch, filters } = props;

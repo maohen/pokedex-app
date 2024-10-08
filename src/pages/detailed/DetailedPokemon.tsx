@@ -6,6 +6,7 @@ import { useDetailedPokemon } from "./useDetailedPokemon";
 
 export const DetailedPokemon = () => {
   
+  //useHook of the component executes the logic
   const {addFavoritePokemons,handleColors,navigate,colors,pokemon} = useDetailedPokemon();
 
   return (

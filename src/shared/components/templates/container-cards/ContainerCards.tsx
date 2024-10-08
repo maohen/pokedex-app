@@ -8,9 +8,9 @@ export const ContainerCards = (props: IContainerCards) => {
   return (
     <div className={styles.containerCards} onScroll={handleScroll}>
       {
-        pokemons && pokemons.map((pokemon:IPokemon)=>
+        pokemons && pokemons.map((pokemon:IPokemon, index)=>
           <Card 
-            key={pokemon.id}
+            key={index}
             img={pokemon.img}
             id={pokemon.id}
             name={pokemon.name}

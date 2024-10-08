@@ -5,9 +5,12 @@ import { IPokemon } from '../../shared/store/models/IPokemons';
 import { useNavigate, useParams } from 'react-router-dom';
 
 export const useDetailedPokemon = () => {
-    const dispatch = useDispatch<Dispatch>();
 
+    //action dispatchs in reducers
+    const dispatch = useDispatch<Dispatch>();
+    //state selector in store
     const { pokemons } = useSelector((state: RootState) => state.pokemons);
+
     const [pokemon, setPokemon] = useState<IPokemon>({
         id: 0,
         name: "",

@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Home } from "../../pages/home/Home";
 import { DetailedPokemon } from "../../pages/detailed/DetailedPokemon";
 import { Favorites } from "../../pages/favorites/Favorites";
-import { pathsRoutes } from "../components/enums/pathsRoutes";
+import { pathsRoutes } from "../enums/pathsRoutes";
 
 
 export const routerConfig = createBrowserRouter([

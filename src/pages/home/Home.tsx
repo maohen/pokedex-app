@@ -4,9 +4,9 @@ import { useHome } from "./useHome";
 
 export const Home = () => {
   
-
+  //useHook of the component executes the logic
   const { pokemons, isLoading, handleScroll, handleSearch } = useHome();
-  console.log(pokemons)
+
   return (
     <>
       <HomeLayout>

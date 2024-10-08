@@ -1,9 +1,8 @@
 import { createModel } from "@rematch/core";
 import { RootModel } from "../index";
-import { IPokemonState, IPokemon } from "../models/IPokemons";
+import { IPokemonState } from "../models/IPokemons";
 import { convertPokemons } from "../mappers/convertPokemonsData";
 import { convertTypesPokemons } from "../mappers/convertTypeData";
-import { convertPokemonsFiltered } from "../mappers/convertPokemonsFiltered";
 
 export const pokemons = createModel<RootModel>()({
     state: {

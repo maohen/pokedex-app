@@ -6,10 +6,15 @@ import { debounceFunction } from "../../shared/helpers/debounceFunction";
 import { GET_DATA } from "../../shared/api/getPokemons";
 
 export const useHome = () => {
+
+  //action dispatchs in reducers
   const dispatch = useDispatch<Dispatch>();
+  //state selector in store
   const { pokemons } = useSelector((state: RootState) => state.pokemons);
+
   const [isLoading, setIsLoading] = useState(false);
 
+  //Graphql hook that executes the request
   const [getPokemons, { loading, data }] = useLazyQuery(GET_DATA);
 
   const handleScroll = (e: any) => {
