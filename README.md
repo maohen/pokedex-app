@@ -30,10 +30,10 @@ npm install
 
 ## Estructura proyecto
 
-src/
-│
-├── pages/        # Vistas de la aplicacion
-├── shared/       # Recursos globales de la aplicacion -> Api, assets, components, helpers, router, store (estados de la aplicacion)
-├── styles/       # Estilos globales de la apliacion 
-├── tests/        # 
-└── App.js        # Componente principal
+- src/
+- │
+- ├── pages/        # Vistas de la aplicacion
+- ├── shared/       # Recursos globales de la aplicacion -> Api, assets, components, helpers, router, store (estados de la aplicacion)
+- ├── styles/       # Estilos globales de la apliacion 
+- ├── tests/        # 
+- └── App.js        # Componente principal
